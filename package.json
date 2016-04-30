@@ -1,0 +1,32 @@
+{
+  "name": "socketio-generic-server",
+  "version": "0.0.1",
+  "description": "Generic Socket.IO server that just emits all the received messages",
+  "main": "app.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "socketio",
+    "server",
+    "generic",
+    "events",
+    "wildcard"
+  ],
+  "author": "Lucas Ricoy <ricoy.lucas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "1.4.5",
+    "socketio-wildcard": "0.3.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.8.1",
+    "cz-conventional-changelog": "1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
