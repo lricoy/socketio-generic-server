@@ -12,7 +12,7 @@ io.on('connection', function(socket) {
         const eventName = originalArgs.data.slice(0, 1)[0],
             args = originalArgs.data.slice(1, originalArgs.data.length);
 
-        socket.emit(eventName, args);
+        io.emit(eventName, args);
     });
 });
 
